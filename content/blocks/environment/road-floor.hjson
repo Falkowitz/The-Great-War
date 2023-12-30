@@ -1,0 +1,6 @@
+type: Floor
+speedMultiplier: 1.25
+walkSound: stone
+variants: 0
+buildVisibility: editorOnly
+name: Road

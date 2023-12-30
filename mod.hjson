@@ -1,0 +1,7 @@
+name: "tgw"
+displayName: "The Great War"
+description: "Total conversion WW2 themed strategy mod"
+author: "Fitz"
+minGameVersion: "136"
+version: "0.1"
+hideBrowser: true

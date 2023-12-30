@@ -1,0 +1,13 @@
+type: Floor
+speedMultiplier: 1
+name: Water
+walkSound: splash
+status: tgw-watered
+statusDuration: 10
+variants: 1
+isLiquid: true
+albedo: 0.9
+supportsOverlay: true
+cacheLayer: water
+placeablePlayer: false
+placeableOn: false

@@ -1,0 +1,140 @@
+health: 100
+type: mech
+armor: 0
+speed: 0.6
+mechSideSway: 0.1
+hitSize: 6
+outlines: false
+fogRadius: 8
+createScorch: false
+drawCell: false
+range: 64
+deathExplosionEffect: 
+	{
+	type: ParticleEffect
+	cone: 1
+	region: tgw-blood
+	sizeFrom: 1
+	sizeTo: 10
+	lifetime: 3600
+	colorFrom: 800000
+	colorTo: 800000
+	lightOpacity: 0
+	lightScl: 0
+	particles: 1
+	layer: 28
+	randLength: false
+	length: 1
+	baseLength: 1
+	lenFrom: 1
+	lenTo: 1
+	strokeFrom: 0
+	strokeTo: 0
+	cap: false
+	}
+deathSound: death2
+ammoCapacity: 160
+ammoType: equipment
+targetAir: false
+targetGround: true
+weapons:[
+	{
+	name: ger-smg-weapon
+	x: 0
+	shootX: 2
+	y: 0
+	shootY: 6
+	recoil: 0.5
+	inaccuracy: 5
+	ejectEffect: none
+	reload: 12
+	mirror: false
+	rotate: false
+	shootSound: mp40-fire
+	parts: [
+			{
+			suffix: "-lhand"
+			type: RegionPart
+			progress: warmup
+			x: -2
+			y: 0
+			moveRot: -15
+			moveY: 1
+			moveX: 0.5
+			layerOffset: -0.01
+			mirror: false
+			outline: false
+			moves: [
+					{
+					type: PartMove
+					progress: recoil
+					moveY: -0.1
+					}
+				]
+			},
+			{
+			suffix: "-rhand"
+			type: RegionPart
+			progress: warmup
+			x: 2
+			y: 0
+			moveRot: -45
+			moveX: -1
+			layerOffset: -0.01
+			mirror: false
+			outline: false
+			moves: [
+					{
+					type: PartMove
+					progress: recoil
+					moveY: -0.1
+					}
+				]
+			}
+		]
+	bullet:{
+		type: BasicBulletType
+		damage: 30
+		speed: 6
+		lifetime: 11
+		width: 2
+		height: 4
+		}
+	shoot: {
+		shots: 1
+		firstShotDelay: 6
+		}
+	}
+]
+abilities: [
+	{
+	type: SpawnDeathAbility
+	unit: ger-smg-dead
+	}
+	{
+	type: StatusFieldAbility
+	effect: none
+	reload: 1
+	effectY: 5
+	effectX: 5
+	parentizeEffects: true
+	activeEffect: {
+		cone: 0
+		followParent: true
+		rotWithParent: false
+		useRotation: false
+		particles: 1
+		lifetime: 3
+		randLength: false
+		length: 0
+		region: tgw-smg
+		sizeFrom: 3
+		sizeTo: 3
+		spin: 0
+		lightScl: 0
+		lightOpacity: 0
+		lightColor: ffffff00
+		layer: 95.1
+		}
+	}
+]

@@ -1,0 +1,6 @@
+name: In a Water
+healthMultiplier: 0.25
+speedMultiplier: 0.25
+color: 5a99a6
+outline: false
+opposites: [burning]

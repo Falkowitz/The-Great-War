@@ -1,0 +1,6 @@
+type: Floor
+speedMultiplier: 1
+walkSound: grass
+variants: 6
+buildVisibility: editorOnly
+name: Grass

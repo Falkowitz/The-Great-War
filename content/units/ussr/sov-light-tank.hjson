@@ -1,0 +1,102 @@
+health: 300
+type: tank
+armor: 30
+speed: 0.7
+hitSize: 20
+rotateSpeed: 0.8
+treadFrames: 160
+range: 192
+treadRects: [
+	{
+	x: 33
+	y: -81
+	width: 12
+	height: 160
+	}
+]
+outlines: false
+fogRadius: 24
+drawCell: false
+omniMovement: false
+rotateMoveFirst: true
+deathExplosionEffect: dynamicExplosion
+deathSound: light-tank-explosion
+loopSound: t-70-ambient
+ammoCapacity: 280
+ammoType: equipment
+targetAir: false
+targetGround: true
+range: 80
+weapons:[
+	{
+	name: sov-light-tank-weapon
+	x: -2
+	y: -1
+	shootX: 1
+	shootY: 16
+	recoil: 0
+	rotateSpeed: 1.2
+	inaccuracy: 10
+	ejectEffect: none
+	reload: 150
+	mirror: false
+	rotate: true
+	shootSound: 45mm-fire
+	parts: [
+			{
+			suffix: "-barrel"
+			type: RegionPart
+			progress: recoil
+			x: 0
+			y: 0
+			moveY: -2
+			mirror: false
+			outline: false
+			}
+		]
+	bullet:{
+		type: BasicBulletType
+		damage: 120
+		speed: 6
+		lifetime: 33
+		width: 2
+		height: 4
+		}
+	shoot: {
+		shots: 1
+		firstShotDelay: 36
+		}
+	}
+]
+abilities: [
+	{
+	type: SpawnDeathAbility
+	unit: sov-light-tank-dead
+	}
+	{
+	type: StatusFieldAbility
+	effect: none
+	reload: 1
+	effectY: 5
+	effectX: 5
+	parentizeEffects: true
+	activeEffect: {
+		cone: 0
+		followParent: true
+		rotWithParent: false
+		useRotation: false
+		particles: 1
+		lifetime: 3
+		randLength: false
+		length: 0
+		region: tgw-light-tank
+		sizeFrom: 3
+		sizeTo: 3
+		spin: 0
+		lightScl: 0
+		lightOpacity: 0
+		lightColor: ffffff00
+		layer: 95.1
+		}
+	}
+]
