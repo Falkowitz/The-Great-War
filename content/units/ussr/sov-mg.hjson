@@ -117,8 +117,8 @@ abilities: [
 	type: StatusFieldAbility
 	effect: none
 	reload: 1
-	effectY: 5
-	effectX: 5
+	effectY: 0 //5
+	effectX: 0 //5
 	parentizeEffects: true
 	activeEffect: {
 		cone: 0
@@ -130,8 +130,8 @@ abilities: [
 		randLength: false
 		length: 0
 		region: tgw-mg
-		sizeFrom: 3
-		sizeTo: 3
+		sizeFrom: 1
+		sizeTo: 1
 		spin: 0
 		lightScl: 0
 		lightOpacity: 0
