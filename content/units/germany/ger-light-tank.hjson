@@ -1,16 +1,16 @@
-health: 300
+health: 275
 type: tank
-armor: 50
-speed: 0.7
+armor: 40
+speed: 0.8
 hitSize: 24
-rotateSpeed: 0.8
+rotateSpeed: 1
 treadFrames: 160
 range: 192
 treadRects: [
 	{
-	x: 33
+	x: 24
 	y: -81
-	width: 12
+	width: 15
 	height: 160
 	}
 ]
@@ -21,35 +21,35 @@ omniMovement: false
 rotateMoveFirst: true
 deathExplosionEffect: dynamicExplosion
 deathSound: light-tank-explosion
-loopSound: t-70-ambient
-ammoCapacity: 390
+loopSound: pz2f-ambient
+ammoCapacity: 380
 ammoType: equipment
 targetAir: false
 targetGround: true
 range: 80
 weapons:[
 	{
-	name: sov-light-tank-weapon
+	name: ger-light-tank-weapon
 	x: -2
-	y: -1
-	shootX: 1
-	shootY: 16
+	y: 2
+	shootX: -1.8
+	shootY: 12
 	recoil: 0
-	rotateSpeed: 1.2
+	rotateSpeed: 1.5
 	inaccuracy: 3
 	ejectEffect: none
-	reload: 312
+	reload: 668
 	mirror: false
 	rotate: true
-	shootSound: 45mm-fire
+	shootSound: 20mm-fire
 	layerOffset: 0.001
 	parts: [
 			{
 			suffix: "-barrel"
 			type: RegionPart
 			progress: recoil
-			x: 1
-			y: 9
+			x: -1
+			y: 6
 			moveY: -2
 			mirror: false
 			outline: false
@@ -58,36 +58,35 @@ weapons:[
 		]
 	bullet:{
 		type: BasicBulletType
-		damage: 120
-		splashDamage: 60
-		splashDamageRadius: 16
+		damage: 35
 		speed: 6
 		lifetime: 33
 		width: 2
 		height: 4
 		}
 	shoot: {
-		shots: 1
-		firstShotDelay: 36
+		shots: 10
+		shotDelay: 20
+		firstShotDelay: 30
 		}
 	},
 	{
 	name: none
-	x: -2
-	y: -1
-	shootX: -1
-	shootY: 8
+	x: -0.5
+	y: 1
+	shootX: 1.8
+	shootY: 10
 	recoil: 0
 	rotateSpeed: 1.2
-	inaccuracy: 6
+	inaccuracy: 8
 	ejectEffect: casing1
-	reload: 6
+	reload: 3
 	mirror: false
 	rotate: true
-	shootSound: dp27-fire
+	shootSound: mg42-fire
 	bullet:{
 		type: BasicBulletType
-		damage: 20
+		damage: 15
 		splashDamage: 0
 		splashDamageRadius: 8
 		speed: 6
@@ -97,7 +96,7 @@ weapons:[
 		}
 	shoot:{
 		shots: 1
-		firstShotDelay: 36
+		firstShotDelay: 30
 		}
 	},
 	{
@@ -111,7 +110,7 @@ weapons:[
 	minShootVelocity: 0.01
 	alwaysShooting: true
 	rotate: true
-	shootSound: t-70-move
+	shootSound: pz2f-move
 	reload: 60
 	soundPitchMin: -1
 	soundPitchMax: -1
@@ -175,7 +174,7 @@ weapons:[
 abilities: [
 	{
 	type: SpawnDeathAbility
-	unit: sov-light-tank-dead
+	unit: ger-light-tank-dead
 	}
 	{
 	type: StatusFieldAbility
