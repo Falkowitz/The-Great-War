@@ -23,7 +23,7 @@ deathExplosionEffect: dynamicExplosion
 deathSound: light-tank-explosion
 loopSound: pz2f-ambient
 ammoCapacity: 380
-ammoType: equipment
+ammoType: deployment-token
 targetAir: false
 targetGround: true
 range: 80

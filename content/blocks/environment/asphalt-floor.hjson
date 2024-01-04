@@ -4,3 +4,4 @@ walkSound: stone
 variants: 0
 buildVisibility: editorOnly
 name: Asphalt
+placeableOn: false

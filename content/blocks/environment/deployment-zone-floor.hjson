@@ -1,7 +1,6 @@
 type: Floor
 speedMultiplier: 1
 walkSound: grass
-variants: 6
+variants: 0
 buildVisibility: editorOnly
-name: Grass
-placeableOn: false
+name: Deployment Zone

@@ -1,7 +1,7 @@
-name: Supplies
+name: Deployment Token
 hardness: 1
 flammability: 0
 lowPriority: false
 buildable: true
 cost: 1
-color: 6e7080
+color: ffd380

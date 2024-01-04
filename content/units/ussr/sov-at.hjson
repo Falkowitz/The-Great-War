@@ -34,7 +34,7 @@ deathExplosionEffect:
 	}
 deathSound: death2
 ammoCapacity: 25
-ammoType: equipment
+ammoType: deployment-token
 targetAir: false
 targetGround: true
 weapons:[

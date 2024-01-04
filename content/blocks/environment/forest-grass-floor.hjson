@@ -4,3 +4,4 @@ walkSound: grass
 variants: 6
 buildVisibility: editorOnly
 name: Grass
+placeableOn: false

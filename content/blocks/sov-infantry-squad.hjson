@@ -1,0 +1,39 @@
+type: ConsumeGenerator
+health: 100
+explodeOnFull: true
+destructible: true
+breakable: true
+rebuildable: false
+size: 1
+hasShadow: false
+itemCapacity: 20
+liquidCapacity: 20
+itemDuration: 300
+powerProduction: 0
+outputLiquid: water/1024
+fuelItem: deployment-token
+hasPower: false
+explosionRadius: 0
+explosionDamage: 0
+explodeEffect: none
+explodeSound: none
+explosionPuddles: 0
+explosionPuddleRange: 0
+explosionPuddleAmount: 0
+explosionShake: 0
+explosionShakeDuration: 0
+requirements:
+[
+	tgw-deployment-token/20
+]
+destroyBullet: 
+{
+	despawnEffect: none
+	shootEffect: none
+	hitEffect: none
+	smokeEffect: none
+	despawnHit: true
+	damage: 0
+	splashDamage: 0
+	splashDamageRadius: 0
+}
