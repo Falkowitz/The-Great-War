@@ -47,7 +47,7 @@ weapons:[
 	recoil: 0.5
 	inaccuracy: 8
 	ejectEffect: none
-	reload: 3
+	reload: 150
 	mirror: false
 	rotate: false
 	shootSound: mg42-fire
@@ -103,7 +103,8 @@ weapons:[
 		height: 4
 		}
 	shoot: {
-		shots: 1
+		shots: 12
+		shotDelay: 3
 		firstShotDelay: 30
 		}
 	}

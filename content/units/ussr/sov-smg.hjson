@@ -47,7 +47,7 @@ weapons:[
 	recoil: 0.5
 	inaccuracy: 6
 	ejectEffect: none
-	reload: 6
+	reload: 120
 	mirror: false
 	rotate: false
 	shootSound: ppsh41-fire
@@ -101,7 +101,8 @@ weapons:[
 		height: 4
 		}
 	shoot: {
-		shots: 1
+		shots: 5
+		shotDelay: 6
 		firstShotDelay: 12
 		}
 	}

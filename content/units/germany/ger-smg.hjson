@@ -47,7 +47,7 @@ weapons:[
 	recoil: 0.5
 	inaccuracy: 5
 	ejectEffect: none
-	reload: 12
+	reload: 100
 	mirror: false
 	rotate: false
 	shootSound: mp40-fire
@@ -101,7 +101,8 @@ weapons:[
 		height: 4
 		}
 	shoot: {
-		shots: 1
+		shots: 4
+		shotDelay: 12
 		firstShotDelay: 6
 		}
 	}

@@ -47,7 +47,7 @@ weapons:[
 	recoil: 0.5
 	inaccuracy: 4
 	ejectEffect: none
-	reload: 30
+	reload: 90
 	mirror: false
 	rotate: false
 	shootSound: gewehr43-fire
@@ -101,7 +101,8 @@ weapons:[
 		height: 4
 		}
 	shoot: {
-		shots: 1
+		shots: 2
+		shotDelay: 30
 		firstShotDelay: 12
 		}
 	}

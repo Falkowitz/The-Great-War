@@ -47,7 +47,7 @@ weapons:[
 	recoil: 0.5
 	inaccuracy: 6
 	ejectEffect: none
-	reload: 6
+	reload: 180
 	mirror: false
 	rotate: false
 	shootSound: dp27-fire
@@ -103,7 +103,8 @@ weapons:[
 		height: 4
 		}
 	shoot: {
-		shots: 1
+		shots: 10
+		shotDelay: 6
 		firstShotDelay: 24
 		}
 	}
